@@ -30,14 +30,11 @@ export default function App() {
   };
 
   const totalVotes = votes.good + votes.neutral + votes.bad;
-  console.log(totalVotes);
-  
   const positiveRate = totalVotes
     ? Math.round((votes.good / totalVotes) * 100)
     : 0
   
   const canReset = totalVotes > 0;
-console.log(canReset);
 
   return (
     <>
