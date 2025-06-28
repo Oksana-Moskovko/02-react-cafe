@@ -15,11 +15,11 @@ export default function App() {
   });
 
   const handleVote = (type: VoteType) => {
-    setVotes(prev => ({
+    setVotes((prev: Votes) => ({
       ...prev,
       [type]: prev[type] + 1,
     }));
-  };
+};
 
   const resetVotes = () => {
     setVotes({
